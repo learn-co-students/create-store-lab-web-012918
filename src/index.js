@@ -9,6 +9,8 @@ export function configureStore(){
   return createStore(manageUsers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 };
 
+//const store = createStore(manageUsers, initialState); //using createStore and passing in reducer?
+
 ReactDOM.render(
   <App store={configureStore()} />,
   document.getElementById('root')
