@@ -6,6 +6,7 @@ export class App extends Component {
     return (
       <div className="App">
         <UserInput store={this.props.store}/>
+        <p>{this.props.store.users}</p>
       </div>
     );
   }
